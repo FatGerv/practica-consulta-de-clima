@@ -1,0 +1,95 @@
+:root {
+    --white: #ffffff;
+    --primary: #F59E0B;
+}
+.title {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    background-image: url("https://i.pinimg.com/736x/81/a5/ac/81a5acc0c27fe29a0a7515e839caa851.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: var(--white);
+    font-size: 2rem;
+}
+.container {
+    width: 95%;
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 4rem;
+        margin-top: 5rem;
+    }
+}
+
+.form, .field {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.form input[type='text'],
+.form select {
+    padding: 1rem;
+    background-color: transparent;
+    border: 0.3rem solid var(--white);
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: 400;
+    border-radius: 1rem;
+}
+
+.submit {
+    background-color: var(--primary);
+    border: none;
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.weather-card {
+    background-color: var(--white);
+    color: black;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.current {
+    font-size: 6rem;
+    font-weight: 900;
+    margin: 0;
+}
+
+.temperatures {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.temperatures p {
+    font-weight: 900;
+}
+
+.temperatures span {
+    font-weight: 400;
+}
